@@ -3,7 +3,7 @@ import './stile.css';
 import {people} from './data/data'
 import {arraySearch} from './ultis/index'
 import DataInput from './data/addelete';
-import { Container, Row, Col } from 'react-bootstrap';
+
 function App() {
   
   
@@ -35,9 +35,9 @@ function App() {
 
 <div className="App">
     
-<Container>
-    <Row>
-      <Col sm={3} md={4} lg={4}>
+<div className='container'>
+    <div className='row'>
+      <div className='col col-sm-3 col-md-4 col-lg-4'>
         <div className="col-md-3 col-xs-6">
               <div className='all'>
     
@@ -145,11 +145,11 @@ function App() {
 
         </div>
 
-      </Col>
+      </div>
 
-    </Row>
+    </div>
 
-  </Container>
+  </div>
 
 </div>
     
