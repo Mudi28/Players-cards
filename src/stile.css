@@ -1,31 +1,36 @@
+/* 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
 
       font: 16px / 24px;
       color: #2b2d42;
       
-      background-size: 1700px;
-      margin: 50px 0;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif;
+      
 
 }
+
+
 
 
 h1{
 
       display: flex;
       position: relative;
-      left: 38%;
+      left: 35%;
+      bottom:20px;
       width: 30%;
+      font-family: 'Montserrat', sans-serif;
+      color: black;
 }
-@media (max-width:550px){
+@media (max-width:1230px){
       h1{
             display:flex;
             position:relative;
             bottom:30px;
 
             
-            left:50px;
+            left:80px;
             color: red;
 
             
@@ -39,10 +44,9 @@ h2 {
       font-size: 32px;
       margin-bottom: 1em;
       color:darkred;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (max-width:550px){
+@media (max-width:1230px){
       h2{
             
             
@@ -51,26 +55,24 @@ h2 {
       }
 }
 
-@media (max-width:550px){
+@media (max-width:1230px){
       .pcount{
             display: flex;
             position: relative;
             bottom:40px;
-            left: 30px;
+            left: 60px;
       }
 }
 
 
-p{
-  
-      font-size: larger;
-      font-style: oblique;
-      color: black;
-      padding-bottom: 10px;
-      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-} 
-
+.lgraf{
+      position: relative;
+      display:flex;
+      left:65%;
+      font-family: 'Montserrat', sans-serif;
+      color:black;
+      bottom:220px;
+}
 
 
 
@@ -79,21 +81,36 @@ p{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .addp{
-      color:#fd9940;
+      color:#070300;
       display: flex;
       position: relative;
-      top:20px;
+      font-family: 'Open Sans', sans-serif;
+
       width:max-content;
+      cursor: pointer;
+      font-weight:bolder;
+      position: relative;
+      left: 77em;
+      bottom:4.5em;
 }
 
 
 .add {
-      color: rgb(97, 1, 1);
-      display: flex;
-      position: relative;
-      top:20px;
-      width: 100%;
       
+      color: black;
+      font-weight: 900;
+      display: block;
+      position: relative;
+      
+      font-family:'Open Sans', sans-serif;
+      width: 52%;
+      
+      
+}
+@media (max-width:570px){
+      .add{
+            width:100%;
+      }
 }
 
 
@@ -101,20 +118,51 @@ p{
       padding-bottom: 0;
       display: flex;
       position: relative;
-      bottom:60px;
+      top:10px;
+      height: 30px;
+
+      
+}
+.playeradd:hover{
+      border: 2px solid black;
 }
 
 
 .persdelete{
       
-      display: solid;
+      display: grid;
       position: relative;
-      bottom:20px;
-      color: #dd7d25;
+      top:20px;
+      color:    #5E5E5E;
+      height:130px;
+      font-weight: bold;
+      display: solid;
+      grid-auto-flow:row;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      font-family: 'Open Sans', sans-serif;
+      
+      
 }
 
-.delete{
-      color: rgb(211, 30, 30);
+.button2 {
+  width: 8%;
+  height: 20px;
+  
+  margin-left: 10px;
+  margin-bottom: 16px;
+  background-color: #0069d9;
+  color: rgb(168, 0, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Ultra', serif;
+}
+    
+.button2:hover {
+      background-color: red;
+      color:black
+  
 }
 
 
@@ -135,13 +183,22 @@ p{
       grid-auto-flow:column;
       padding: 25px 0px;
       border-radius: 20px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       overflow-x: scroll;
-      
       scroll-snap-type: x mandatory;
+      overflow-y: hidden;
   
 }
 
+    
+
+      
+
+.pcount{
+      font-family: 'Montserrat', sans-serif;
+      color:black;
+      position: relative;
+      top:60px;
+}
 
 
 
@@ -157,14 +214,25 @@ p{
       scroll-snap-align: start;
       transition: all 0.2s;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      height:550px;
+      background-image: url(prova3.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+}
 
+
+@media(max-width:1230px){
+      .card{
+            height:max-content;
+      }
 }
 
 
 .card:hover {
 
-      color: black;
-      background:#ecfdec;
+      border: 4px solid black;
+      
 
 }
 
@@ -172,12 +240,23 @@ p{
 .card .card-title {
 
       font-size: 30px;
-      display:contents;
+      display:flex;
       position: relative;
-      bottom: 50px;
-      left:42%;
-      width:50%;
+      bottom:320px;
+      font-family: 'Orbitron', sans-serif;
+      
+      
 
+}
+@media (max-width:1230px){
+      .card .card-title {
+            display: flex;
+            position: relative;
+            float: none;
+            top:10px;
+            width: 100%;
+            
+      }
 }
 
 
@@ -193,17 +272,42 @@ p{
     
 }
 
-
+.namep{
+      font-family: 'Orbitron', sans-serif;
+      font-style: oblique;
+}
 .card .card-content {
       margin: 20px 0;
-      width: 85%;
+      width: 30%;
       position: relative;
-      top:10px;
-      display:solid;
-
+      bottom:330px;
+      font-family: 'Gruppo', cursive;
+      font-size: larger;
+      
+       display:solid;
+      
+      
+      
 }
+@media (max-width:1230px){
+      .card .card-content {
+           display: solid;
+           position: relative;
+           top:20px;
+           width:100%;
+           left:1%;
+           
+            
+      }
+}
+.pcontent{
+  
+      font-size: larger;
+      font-weight:bolder;
+      color: rgb(0,0,0,1);
+      padding-bottom: 10px;
 
-
+} 
 .card .card-link-wrapper {
 
       margin-top: auto;
@@ -215,16 +319,72 @@ p{
 
       display: flex;
       position: relative;
-      left:45%;
-      bottom:50px;
+      left:42%;
+      bottom:80px;
       width: max-content;
-
+      cursor: pointer;
+      color: #000000;
+ border: 2px solid #8707ff;
+ border-radius: 10px;
+ padding: 10px 25px;
+ background: transparent;
+ max-width: 190px;
 }
-@media (max-width:550px){
+
+.search:active {
+ box-shadow: 2px 2px 15px #8707ff inset;
+      
+}
+@media (max-width:1230px){
       .search{
             
             left:50px;
+            bottom:65px;
       }
+}
+
+.lista{
+      display:block;
+      position:absolute;
+      width: 11%;
+      border: 1px solid black;
+      top:96px;
+      left: 44%;
+      cursor: pointer;
+      
+      
+      
+}
+@media (max-width:1230px) {
+      .lista{
+            display: block;
+            position: relative;
+            color: red;
+            left: 50px;
+            width:100px;
+            cursor: pointer;
+            bottom:45px;
+
+
+
+
+
+            
+      }
+}
+
+.lista1{
+      padding: 5px;
+      border: 1px solid black;
+      cursor: pointer;
+}
+
+@media (max-width:1230px) {
+      .lista1{
+            border:1px solid red;
+            color:#dd7d25;
+      }
+      
 }
 
 
@@ -233,8 +393,8 @@ p{
       display: flex;
       position: relative;
       width:max-content;
-      bottom: 60px;
-      left: 40%;
+      bottom: 390px;
+      left: 42%;
       text-decoration: none;
       color: white;
       background: #fd9940;
@@ -247,9 +407,9 @@ p{
             .card .card-link{
 
                   width:150px;
-                  bottom: 140px;
+                  bottom: 120px;
                   
-                  left: 20px;
+                  left:10%;
                   
 
 
@@ -260,20 +420,25 @@ p{
       background: #dd7d25;
 
 }
-
+.video:hover{
+      border:8px solid black;
+}
 .video{
-      max-width: 100%;
+      width: 70%;
       display: flex;
+      position: relative;
+     
      
      
      
   }
   
-  @media (min-width: 1040px) {
+  @media (min-width: 1230px) {
       .video {
           width: 45%;
-          position:absolute;
-          display: flex;
+          position:relative;
+          display:block;
+          
           left:30%;
       }
   }
@@ -284,13 +449,18 @@ p{
 
       display: flex;
       position: relative;
-      top:50px;
+      bottom:280px;
 
       
       
       padding: auto;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif
-      
+      font-family: 'Open Sans', sans-serif;    
+      color: rgb(0, 0, 0,1);      
+  }
+  @media(max-width:1230px){
+      .table-responsive{
+            top:50px;
+      }
   }
 
   th{
@@ -304,10 +474,10 @@ p{
       display: flex;
       position: relative;
       float: right;
-      bottom:50px;
+      bottom:80px;
 
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
       border: 5px solid black;
       border-style:double;
       border-radius: 50%;
@@ -322,10 +492,11 @@ p{
 }
 
 
-img:hover {
+.immagine:hover {
 
       border: 5px solid black;
       border-radius: 100%;
+      
     
 }
 
@@ -337,6 +508,259 @@ img:hover {
       margin: 0;
 
 }
+/* HOMEPAGE.JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.group {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 4%;
+      position: relative;
+      place-content: center;
+      position: relative;
+      top:30px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: small;
+      
+      }
+      
+      
+    .icon {
+      width: 190px;
+      height: 254px;
+      
+      background: #07182E;
+      position: relative;
+      margin-right: 20px;
+      cursor: pointer;
+      display: flex;
+      place-content: center;
+      
+      place-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    
+    .icon table {
+      z-index: 1;
+      color: white;
+      
+      
+    }
+    
+    .icon::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      background-image: linear-gradient(80deg, rgb(0, 238, 255), rgb(62, 255, 48));
+      height: 130%;
+      animation: rotBGimg 5s linear infinite;
+      transition: all 0.2s linear;
+    }
+    
+    @keyframes rotBGimg {
+      from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .icon::after {
+      content: '';
+      position: absolute;
+      background: #0c284d;
+      ;
+      inset: 5px;
+      border-radius: 15px;
+    }  
+    .rig{
+      display: flex;
+      position: relative;
+      bottom:10px;
+      padding-top: 5%;
+      place-content: center;
+      
+      place-items: center;
+    }
+    .hp{
+      display: flex;
+      position: relative;
+      top:40px;
+      left:39%;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 50px;
+      color: rgb(17, 0, 73);
+
+
+      
+    }
+    
+    .tim{
+      width:160px;
+      height: 100px;
+      position:relative;
+      bottom:10px;
+      border-radius: 100%;
+      border:2px solid black;
+      display:flex;
+      background-color: #000f933b;
+    }
+    .tim:hover{
+      border: 2px solid rgb(10, 0, 116);
+    }
+/* PLAYERS PAGE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.back{
+      background-repeat: no-repeat;
+      background-size:cover;
+      
+
+    }
+
+
+    
+    
+.font{
+      font-family: 'Orbitron', sans-serif;
+      font-size: 38px;
+      color: #da0000;
+     
+      display: solid;
+      place-content: center;
+      
+      place-items: center;
+      position: relative;
+      top:20px;
+}    
+
+.container1{
+      
+display: solid;
+position: relative;
+max-width: 90%;
+max-height: max-content;
+padding: 15px;
+margin: auto;
+border-radius: 20px;      
+
+}
+
+/* grafici.js
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container3 {
+
+      display: solid;
+      position: relative;
+      max-width: 70%;
+      max-height: max-content;
+      padding: 15px;
+      margin: auto;
+      display: grid;
+      grid-auto-columns: 100%;
+      grid-column-gap: 10px;
+      grid-auto-flow:column;
+      padding: 25px 0px;
+      border-radius: 20px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      
+  
+}
+
+.card3 {
+
+      display: inline-block;
+      position: relative;
+      flex-direction: column;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+      scroll-snap-align: start;
+      transition: all 0.9s;
+      width:100%;
+      height:550px;
+      background-image: url(prova3.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+}
+
+/* NAV BAR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.topnav {
+      background-color: rgb(0, 0, 0);
+      overflow: hidden;
+      
+}
+.topnav:hover{
+      background: #0ff403;
+      color: #050801;
+      box-shadow: 0 0 5px #0ff403,
+                  0 0 25px #0ff403,
+                  0 0 50px #0ff403,
+                  0 0 200px #0ff403;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.nav:hover{
+    
+    
+    
+   
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 1.5s;
+    letter-spacing: 5px;
+    
+    
+   
+}
+.nav:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+
+
+
+
+
+
+.topnav h3 {
+      float: left;
+      position:relative;
+      left: 42%;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+
+    .topnav h3:hover {
+      background-color: rgb(235, 235, 235);
+      color: black;
+    }
+nav{
+      display: flex;
+
+}
+.topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+
 
 
 
@@ -352,9 +776,118 @@ img:hover {
   align-items: center;
   padding: 5px;
   z-index: 1;
-  color: aquamarine;
+  color: rgb(0, 0, 0);
 }
 .page-footer a {
   display: flex;
   margin-left: 4px;
 }
+
+
+.form-group {
+      display: flex;
+      position: relative;
+      float: right;
+      
+      bottom:150px;
+      
+    }
+    
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .select1 {
+      width:32%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 900;
+    }
+    
+    .button1 {
+      width: 10%;
+      margin-left: 5px;
+      padding: 0.5rem;
+      margin-bottom: 16px;
+      background-color: #007bff;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight:900;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .button1:hover {
+      background-color: #0069d9;
+    }
+
+        
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      }
+
+      .player-table{
+            width: 500px;
+            
+      }
+
+      .th1{
+            padding: 2em;
+            padding-right: 4em;
+            font-family: 'Open Sans', sans-serif;
+      }
+      .td1{
+            width:350px;
+            font-family: 'Open Sans', sans-serif;
+      }
+      
+      .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      height: 80%;
+      display: grid;
+      flex-direction: column;
+      overflow-y: scroll;
+      
+      }
+
+      .close{
+            
+            position:fixed;
+            bottom:51.2em;
+            left: 94.5em;
+            width: 2%;
+            height: 3%;
+            background-color: rgb(234, 33, 33);
+            cursor: pointer;
+      }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
