@@ -701,6 +701,10 @@ label {
   align-items: center;
   justify-content: center;
   z-index: 10;
+  flex-direction: column;
+
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom, hsl(228, 98%, 45%), hsl(236, 50%, 94%));
 }
 
 .player-table {
@@ -709,7 +713,7 @@ label {
 
 .th1 {
   padding: 2em;
-  padding-right: 4em;
+  padding-right: 2em;
   font-family: "Open Sans", sans-serif;
 }
 .td1 {
