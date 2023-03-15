@@ -40,11 +40,11 @@ const All = () => {
       </div>
 
       <div className="card3">
-        <Linechart chartData={People} />
+        <Pradar chartData={People} />
       </div>
 
       <div className="card3">
-        <Pradar chartData={People} />
+        <Linechart chartData={People} />
       </div>
     </div>
   );

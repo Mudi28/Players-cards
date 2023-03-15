@@ -15,7 +15,7 @@ function Grafici() {
       <div className="row">
         <div className="col col-sm-3 col-md-4 col-lg-4">
           <div className="col-md-3 col-xs-6">
-            <h1 className="font">Grafici a Confronto</h1>
+            <h1 className="font">Comparative Graphs</h1>
 
             <All />
           </div>

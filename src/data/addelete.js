@@ -201,7 +201,9 @@ const DataInput = () => {
           }
           onChange={handleInputChange}
         />
-        <button className="addplay" type="submit">Add</button>
+        <button className="addplay" type="submit">
+          Add
+        </button>
       </form>
 
       <ul className="persdelete">

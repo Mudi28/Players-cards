@@ -8,7 +8,6 @@ import { Modale } from "./data/modale";
 import { Link, useNavigate } from "react-router-dom";
 import calcio from "./prova99.jpeg";
 
-
 function App() {
   const [population, setPopulation] = useState(people);
   const [count, setCount] = useState(people.length);
@@ -30,7 +29,6 @@ function App() {
       selectedPerson1 !== "" &&
       selectedPerson2 !== ""
     ) {
-      
       navigate("/grafici", {
         state: {
           selectedOption,
@@ -150,6 +148,18 @@ function App() {
                       </option>
                     ))}
                   </select>
+                  <select
+                    id="selectedPersonAll"
+                    value={selectedPerson1}
+                    onChange={(e) => setSelectedPerson1(e.target.value)}
+                    className="select3"
+                  >
+                    <option value="option" disabled>
+                      {" "}
+                      Select A Parameter
+                    </option>
+                    <option> All {population.person}</option>
+                  </select>
 
                   <select
                     id="selectedOption"
@@ -180,7 +190,7 @@ function App() {
                 </form>
 
                 <Link to={`/Grafici`} style={{ textDecoration: "none" }}>
-                  <h2 className="lgraf">Grafici a confronto</h2>
+                  <h2 className="lgraf">Comparative Graphs</h2>
                 </Link>
                 <div className="container">
                   {population.map((person) => (
